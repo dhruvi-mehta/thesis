@@ -39,12 +39,35 @@ nav li a:hover {
 
 
 .container {
-  display: flex;
+  display: grid;
   justify-content: center;
   padding-top:0px;
   overflow:hidden;
 
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
 }
+
+.item {
+  background-color: #eee;
+  padding: 20px;
+  text-align: center;
+  background-color: transparent
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+}
+
+
 
 .column {
   flex: 1;
