@@ -67,8 +67,6 @@ nav li a:hover {
   }
 }
 
-
-
 .column {
   flex: 1;
   margin: 0 10px;
@@ -141,7 +139,7 @@ video::-webkit-media-controls {
   grid-template-columns:1fr 1fr 1fr;
   grid-gap:20px;
   justify-content:center;
-
+  z-index:0;
 }
 
 .mandelgrid-item{
@@ -157,3 +155,62 @@ video::-webkit-media-controls {
   height: 100%;
   object-fit: cover;
 }
+
+#myBtn {
+
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: white;
+  color: black; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 7px; /* Some padding */
+  border-radius: 5px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+}
+
+
+
+/*#myBtn {
+  bottom: 120px; /* Place the button at the bottom of the page */
+  right:100px; /* Place the button 30px from the right */
+  z-index: 0; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: white; /* Set a background color */
+  color: black; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+}*/
+
+#myBtn:hover {
+  background-color: #555; /* Add a dark-grey background on hover */
+}
+
+/*#scroll-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #333;
+  color: white;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 50%;
+}
+
+.arrow-up {
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+  transform: rotate(-135deg);
+  -webkit-transform: rotate(-135deg);
+}
+*/
+
