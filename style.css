@@ -160,7 +160,7 @@ video::-webkit-media-controls {
 
   position: fixed;
   bottom: 20px;
-  right: 20px;
+  left: 20px;
   background-color: white;
   color: black; /* Text color */
   cursor: pointer; /* Add a mouse pointer on hover */
@@ -213,4 +213,22 @@ video::-webkit-media-controls {
   -webkit-transform: rotate(-135deg);
 }
 */
+
+footer {
+  position:relative;
+  bottom: 0;
+  right: 10px;
+  width: 100%;
+  padding: 10px;
+  padding-right:10px;
+  text-align:right;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+  font-size:15px;
+}
+
+
 
