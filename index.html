@@ -17,29 +17,42 @@
   <nav>
   <ul>
     <li><a href="index.html">HOME</a></li>
-    <li><a href="responses.html">RESPONSES</a></li>
+    <li><a href="responses/responses.html">RESPONSES</a></li>
+    <li><button id="show-popup-btn">INFO</button></li>
   </ul>
 </nav>
 
+<div class="mainpage">
 <div class="headline">
-<h1>TITLE</h1>  
+<h1>APOPHENIA</h1> 
 </div>
-  
+</div>
+</div>
+</div>
+
+<!-- Pop-up box -->
+<div id="popup-box">
+  <p>Apophenia is a cognitive tendency wherein individuals perceive patterns or connections in abstract or random data. This natural human phenomenon is driven by the brain's inclination to seek out patterns and meaning in the environment. The brain attempts to comprehend the information it receives by establishing links between various pieces of data. For instance, observing faces in clouds or hearing voices in white noise are common examples of Apophenia.</p>
+  <p>My senior thesis delves into this exact phenomenon, investigating it using various generative codes such as Perlin noise, 3D Perlin noise (Mesh), and the Mandelbulb. The objective of my research is to showcase abstract movements in patterns and create an archive of the viewers' responses and their associations with such patterns.</p>
+  <p>Feel free to click on any of the three images for a sensory visual experience.</p>
+  <button id="close-btn">Close</button>
+</div>
+
+
+
+
 <div class="container">
-  <div class="item"> <a href="mandelbulb.html">
-    <img src="images/mandelbulb/mandelbulb.png" alt="Image 1">
-  </a></div>
-  <div class="item"> <a href="mesh.html">
-    <img src="images/mesh/mesh.png" alt="Image 2">
-  </a></div>
-  <div class="item"> <a href="perlin.html">
-    <img src="images/perlin/perlin.png" alt="Image 3">
-  </a></div>
+  <div class="item"> <a href="mandelbulb/mandelbulb.html"><h4>MANDELBULB</h4><img src="mandelbulb/videos/mandelbulb.png" alt="Image 1"></a></div>
 
+  <div class="item"> <a href="mesh/mesh.html"><h4>MESH</h4>
+    <img src="mesh/videos/mesh.png" alt="Image 2">
+  </a></div>
+  <div class="item"> <a href="perlin/perlin.html"><h4> PERLIN NOISE </h4>
+    <img src="perlin/videos/perlin.png" width="90%" height="auto" alt="Image 3">
+  </a></div>
 </div>
 </div>
 </div>
-
-
+<script src="scripts-index.js"></script>
 </body>
 </html>
