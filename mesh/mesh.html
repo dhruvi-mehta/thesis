@@ -6,8 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mesh</title>
   <link href="style.css" rel="stylesheet" type="text/css" />
-   <script src="scripts.js"></script>
-   <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
+  
  <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
@@ -35,9 +34,33 @@
 
   
   <div class="meshgrid"> 
-    <div class="meshgrid-item"><video autoplay loop muted src="videos/mesh1.mov" width="450" height="450" autoplay controls></video></div>
-    <div class="meshgrid-item"><video autoplay loop muted src="videos/mesh2.mov" width="450" height="450" autoplay controls></video></div>
-    <div class="meshgrid-item"><video autoplay loop muted src="videos/mesh3.mov" width="450" height="450" autoplay controls></video></div>
+    <div class="meshgrid-item">
+      <div id="popup-form" class="popup-form hidden">
+        <form id="my-form" action="https://formspree.io/f/mleknklr" method="POST">
+        <label>What did you see in the video?</label>
+        <input type="text" name="message"/>
+        <input type="hidden" name="video-id" value="mesh1" />
+        <button id="my-form-button">Submit</button>
+        <p id="my-form-status"></p>
+      </form>
+    </div>     
+    <video  id="my-video" autoplay loop muted src="videos/mesh1.mov" width="450" height="450" autoplay controls></video>
+</div>
+    <div class="meshgrid-item">
+          <div id="popup-form" class="popup-form hidden">
+        <form id="my-form-2" action="https://formspree.io/f/mleknklr" method="POST">
+        <label>What did you see in the video?</label>
+        <input type="text" name="message"/>
+        <input type="hidden" name="video-id" value="mesh2">
+        <button id="my-form-2-button">Submit</button>
+        <p id="my-form-2-status"></p>
+      </form>
+    </div>    
+      <video  id="my-video" autoplay loop muted src="videos/mesh2.mov" width="450" height="450" autoplay controls></video>
+    </div>
+    <div class="meshgrid-item">
+      <video autoplay loop muted src="videos/mesh3.mov" width="450" height="450" autoplay controls></video>
+    </div>
     <div class="meshgrid-item"><video autoplay loop muted src="videos/mesh4.mov" width="450" height="450" autoplay controls></video></div>
     <div class="meshgrid-item"><video autoplay loop muted src="videos/mesh5.mov" width="450" height="450" autoplay controls></video></div>
     <div class="meshgrid-item"><video autoplay loop muted src="videos/mesh6.mov" width="450" height="450" autoplay controls></video></div>
@@ -72,6 +95,73 @@
   <a href="../perlin/perlin.html">NEXT PAGE</a>
 </footer>
 
+<script>
+    var form = document.getElementById("my-form");
+    
+    async function handleSubmit(event) {
+      event.preventDefault();
+      var status = document.getElementById("my-form-status");
+      var data = new FormData(event.target);
+      fetch(event.target.action, {
+        method: form.method,
+        body: data,
+        headers: {
+            'Accept': 'application/json'
+        }
+      }).then(response => {
+        if (response.ok) {
+          status.innerHTML = "Thanks for your submission!";
+          form.reset()
+        } else {
+          response.json().then(data => {
+            if (Object.hasOwn(data, 'errors')) {
+              status.innerHTML = data["errors"].map(error => error["message"]).join(", ")
+            } else {
+              status.innerHTML = "Oops! There was a problem submitting your form"
+            }
+          })
+        }
+      }).catch(error => {
+        status.innerHTML = "Oops! There was a problem submitting your form"
+      });
+    }
+    form.addEventListener("submit", handleSubmit)
+</script>
+
+<script>
+    var form = document.getElementById("my-form-2");
+    
+    async function handleSubmit(event) {
+      event.preventDefault();
+      var status = document.getElementById("my-form-2-status");
+      var data = new FormData(event.target);
+      fetch(event.target.action, {
+        method: form.method,
+        body: data,
+        headers: {
+            'Accept': 'application/json'
+        }
+      }).then(response => {
+        if (response.ok) {
+          status.innerHTML = "Thanks for your submission!";
+          form.reset()
+        } else {
+          response.json().then(data => {
+            if (Object.hasOwn(data, 'errors')) {
+              status.innerHTML = data["errors"].map(error => error["message"]).join(", ")
+            } else {
+              status.innerHTML = "Oops! There was a problem submitting your form"
+            }
+          })
+        }
+      }).catch(error => {
+        status.innerHTML = "Oops! There was a problem submitting your form"
+      });
+    }
+    form.addEventListener("submit", handleSubmit)
+</script>
+
+<script src="scripts.js"></script>
 
 </body>
 </html>
