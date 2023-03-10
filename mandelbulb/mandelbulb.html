@@ -6,7 +6,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mandelbulb</title>
   <link href="style.css" rel="stylesheet" type="text/css" />
-  <script src="scripts.js"></script>
  <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
@@ -30,37 +29,1019 @@
 </h5>
 </div>
 </div>
-<div class="mandelgrid"> 
-    <div class="mandelgrid-item"><video autoplay loop muted src="videos/mandelbulb1.mov" width="450" height="450" autoplay controls></video></div>
-    <div class="mandelgrid-item"><video autoplay loop muted src="videos/mandelbulb2.mov" width="450" height="450" autoplay controls></video></div>
-    <div class="mandelgrid-item"><video autoplay loop muted src="videos/mandelbulb3.mov" width="450" height="450" autoplay controls></video></div>
-    <div class="mandelgrid-item"><video autoplay loop muted src="videos/mandelbulb4.mov" width="450" height="450" autoplay controls></video></div>
-    <div class="mandelgrid-item"><video autoplay loop muted src="videos/mandelbulb5.mov" width="450" height="450" autoplay controls></video></div>
-    <div class="mandelgrid-item"><video autoplay loop muted src="videos/mandelbulb6.mov" width="450" height="450" autoplay controls></video></div>
-    <div class="mandelgrid-item"><video autoplay loop muted src="videos/mandelbulb7.mov" width="450" height="450" autoplay controls></video></div>
-    <div class="mandelgrid-item"><video autoplay loop muted src="videos/mandelbulb8.mov" width="450" height="450" autoplay controls></video></div>
-    <div class="mandelgrid-item"><video autoplay loop muted src="videos/mandelbulb9.mov" width="450" height="450" autoplay controls></video></div>
-    <div class="mandelgrid-item"><video autoplay loop muted src="videos/mandelbulb10.mov" width="450" height="450" autoplay controls></video></div>
-    <div class="mandelgrid-item"><video autoplay loop muted src="videos/mandelbulb11.mov" width="450" height="450" autoplay controls></video></div>
-    <div class="mandelgrid-item"><video autoplay loop muted src="videos/mandelbulb12.mov" width="450" height="450" autoplay controls></video></div>
-    <div class="mandelgrid-item"><video autoplay loop muted src="videos/mandelbulb13.mov" width="450" height="450" autoplay controls></video></div>
-    <div class="mandelgrid-item"><video autoplay loop muted src="videos/mandelbulb14.mov" width="450" height="450" autoplay controls></video></div>
-    <div class="mandelgrid-item"><video autoplay loop muted src="videos/mandelbulb15.mov" width="450" height="450" autoplay controls></video></div>
-    <div class="mandelgrid-item"><video autoplay loop muted src="videos/mandelbulb16.mov" width="450" height="450" autoplay controls></video></div>
-    <div class="mandelgrid-item"><video autoplay loop muted src="videos/mandelbulb17.mov" width="450" height="450" autoplay controls></video></div>
-    <div class="mandelgrid-item"><video autoplay loop muted src="videos/mandelbulb18.mov" width="450" height="450" autoplay controls></video></div>
-    <div class="mandelgrid-item"><video autoplay loop muted src="videos/mandelbulb19.mov" width="450" height="450" autoplay controls></video></div>
-    <div class="mandelgrid-item"><video autoplay loop muted src="videos/mandelbulb20.mov" width="450" height="450" autoplay controls></video></div>
-    <div class="mandelgrid-item"><video autoplay loop muted src="videos/mandelbulb21.mov" width="450" height="450" autoplay controls></video></div>
+<div class="mandelgrid">    
+ <div class="mandelgrid-item">
+      <div id="popup-form" class="popup-form hidden">
+        <form id="my-form" action="https://formspree.io/f/mleknklr" method="POST">
+        <label>What did you see in the video?</label>
+        <input type="text" name="message"/>
+        <input type="hidden" name="video-id" value="mesh1" />
+        <button id="my-form-button">Submit</button>
+        <p id="my-form-status"></p>
+      </form>
+    </div>     
+    <video  id="my-video" autoplay loop muted src="videos/mandelbulb1.mov" width="450" height="450" autoplay controls></video>
+</div>
+
+
+    <div class="mandelgrid-item">
+       <div id="popup-form-2" class="popup-form-2 hidden">
+        <form id="my-form-2" action="https://formspree.io/f/mleknklr" method="POST">
+        <label>What did you see in the video?</label>
+        <input type="text" name="message"/>
+        <input type="hidden" name="video-id" value="mandelbulb2">
+        <button id="my-form-2-button">Submit</button>
+        <p id="my-form-2-status"></p>
+      </form>
+    </div>    
+      <video  id="my-video-2" autoplay loop muted src="videos/mandelbulb2.mov" width="450" height="450" autoplay controls></video>
+    </div>
+
+
+
+
+
+    <div class="mandelgrid-item">
+         <div id="popup-form-3" class="popup-form-3 hidden">
+        <form id="my-form-3" action="https://formspree.io/f/mleknklr" method="POST">
+        <label>What did you see in the video?</label>
+        <input type="text" name="message"/>
+        <input type="hidden" name="video-id" value="mandelbulb3">
+        <button id="my-form-3-button">Submit</button>
+        <p id="my-form-3-status"></p>
+      </form>
+    </div>  
+      <video id="my-video-3" autoplay loop muted src="videos/mandelbulb3.mov" width="450" height="450" autoplay controls></video>
+    </div>
+
+    <div class="mandelgrid-item">
+       <div id="popup-form-4" class="popup-form-4 hidden">
+        <form id="my-form-4" action="https://formspree.io/f/mleknklr" method="POST">
+        <label>What did you see in the video?</label>
+        <input type="text" name="message"/>
+        <input type="hidden" name="video-id" value="mandelbulb4">
+        <button id="my-form-4-button">Submit</button>
+        <p id="my-form-4-status"></p>
+      </form>
+    </div>  
+      <video id="my-video-4" autoplay loop muted src="videos/mandelbulb4.mov" width="450" height="450" autoplay controls></video>
+    </div>
+
+    <div class="mandelgrid-item">
+       <div id="popup-form-5" class="popup-form-5 hidden">
+        <form id="my-form-5" action="https://formspree.io/f/mleknklr" method="POST">
+        <label>What did you see in the video?</label>
+        <input type="text" name="message"/>
+        <input type="hidden" name="video-id" value="mandelbulb5">
+        <button id="my-form-5-button">Submit</button>
+        <p id="my-form-5-status"></p>
+      </form>
+    </div>  
+      <video id="my-video-5" autoplay loop muted src="videos/mandelbulb5.mov" width="450" height="450" autoplay controls></video>
+    </div>
+
+    <div class="mandelgrid-item">
+       <div id="popup-form-6" class="popup-form-6 hidden">
+        <form id="my-form-6" action="https://formspree.io/f/mleknklr" method="POST">
+        <label>What did you see in the video?</label>
+        <input type="text" name="message"/>
+        <input type="hidden" name="video-id" value="mandelbulb6">
+        <button id="my-form-6-button">Submit</button>
+        <p id="my-form-6-status"></p>
+      </form>
+    </div>  
+      <video id="my-video-6" autoplay loop muted src="videos/mandelbulb6.mov" width="450" height="450" autoplay controls>
+      </video>
+    </div>
+
+    <div class="mandelgrid-item">
+         <div id="popup-form-7" class="popup-form-7 hidden">
+        <form id="my-form-7" action="https://formspree.io/f/mleknklr" method="POST">
+        <label>What did you see in the video?</label>
+        <input type="text" name="message"/>
+        <input type="hidden" name="video-id" value="mandelbulb7">
+        <button id="my-form-7-button">Submit</button>
+        <p id="my-form-7-status"></p>
+      </form>
+    </div>
+      <video id="my-video-7" autoplay loop muted src="videos/mandelbulb7.mov" width="450" height="450" autoplay controls></video>
+    </div>
+
+
+    <div class="mandelgrid-item">
+      <div id="popup-form-8" class="popup-form-8 hidden">
+        <form id="my-form-8" action="https://formspree.io/f/mleknklr" method="POST">
+        <label>What did you see in the video?</label>
+        <input type="text" name="message"/>
+        <input type="hidden" name="video-id" value="mandelbulb8">
+        <button id="my-form-8-button">Submit</button>
+        <p id="my-form-8-status"></p>
+      </form>
+    </div>
+
+    <video id="my-video-8"  autoplay loop muted src="videos/mandelbulb8.mov" width="450" height="450" autoplay controls></video>
+  </div>
+
+    <div class="mandelgrid-item">
+      <div id="popup-form-9" class="popup-form-8 hidden">
+        <form id="my-form-9" action="https://formspree.io/f/mleknklr" method="POST">
+        <label>What did you see in the video?</label>
+        <input type="text" name="message"/>
+        <input type="hidden" name="video-id" value="mandelbulb9">
+        <button id="my-form-9-button">Submit</button>
+        <p id="my-form-9-status"></p>
+      </form>
+    </div>
+
+    <video id="my-video-9"  autoplay loop muted src="videos/mandelbulb9.mov" width="450" height="450" autoplay controls></video>
+  </div>
+
+
+    <div class="mandelgrid-item">
+      <div id="popup-form-10" class="popup-form-10 hidden">
+        <form id="my-form-10" action="https://formspree.io/f/mleknklr" method="POST">
+        <label>What did you see in the video?</label>
+        <input type="text" name="message"/>
+        <input type="hidden" name="video-id" value="mandelbulb10">
+        <button id="my-form-10-button">Submit</button>
+        <p id="my-form-10-status"></p>
+      </form>
+    </div>
+
+    <video id="my-video-10"  autoplay loop muted src="videos/mandelbulb10.mov" width="450" height="450" autoplay controls></video>
+  </div>
+     
+
+        <div class="mandelgrid-item">
+      <div id="popup-form-11" class="popup-form-11 hidden">
+        <form id="my-form-11" action="https://formspree.io/f/mleknklr" method="POST">
+        <label>What did you see in the video?</label>
+        <input type="text" name="message"/>
+        <input type="hidden" name="video-id" value="mandelbulb11">
+        <button id="my-form-11-button">Submit</button>
+        <p id="my-form-11-status"></p>
+      </form>
+    </div>
+
+    <video id="my-video-11"  autoplay loop muted src="videos/mandelbulb11.mov" width="450" height="450" autoplay controls></video>
+  </div>
+
+    <div class="mandelgrid-item">
+      <div id="popup-form-12" class="popup-form-12 hidden">
+        <form id="my-form-12" action="https://formspree.io/f/mleknklr" method="POST">
+        <label>What did you see in the video?</label>
+        <input type="text" name="message"/>
+        <input type="hidden" name="video-id" value="mandelbulb12">
+        <button id="my-form-12-button">Submit</button>
+        <p id="my-form-12-status"></p>
+      </form>
+    </div>
+
+    <video id="my-video-12"  autoplay loop muted src="videos/mandelbulb12.mov" width="450" height="450" autoplay controls></video>
+  </div>
+     
+      <div class="mandelgrid-item">
+      <div id="popup-form-13" class="popup-form-13 hidden">
+        <form id="my-form-13" action="https://formspree.io/f/mleknklr" method="POST">
+        <label>What did you see in the video?</label>
+        <input type="text" name="message"/>
+        <input type="hidden" name="video-id" value="mandelbulb13">
+        <button id="my-form-13-button">Submit</button>
+        <p id="my-form-13-status"></p>
+      </form>
+    </div>
+
+    <video id="my-video-13"  autoplay loop muted src="videos/mandelbulb13.mov" width="450" height="450" autoplay controls></video>
+  </div>
+     
+
+         <div class="mandelgrid-item">
+      <div id="popup-form-14" class="popup-form-14 hidden">
+        <form id="my-form-14" action="https://formspree.io/f/mleknklr" method="POST">
+        <label>What did you see in the video?</label>
+        <input type="text" name="message"/>
+        <input type="hidden" name="video-id" value="mandelbulb14">
+        <button id="my-form-14-button">Submit</button>
+        <p id="my-form-14-status"></p>
+      </form>
+    </div>
+
+    <video id="my-video-14"  autoplay loop muted src="videos/mandelbulb14.mov" width="450" height="450" autoplay controls></video>
+  </div>
+     
+
+              <div class="mandelgrid-item">
+      <div id="popup-form-15" class="popup-form-15 hidden">
+        <form id="my-form-15" action="https://formspree.io/f/mleknklr" method="POST">
+        <label>What did you see in the video?</label>
+        <input type="text" name="message"/>
+        <input type="hidden" name="video-id" value="mandelbulb15">
+        <button id="my-form-15-button">Submit</button>
+        <p id="my-form-15-status"></p>
+      </form>
+    </div>
+
+    <video id="my-video-15"  autoplay loop muted src="videos/mandelbulb15.mov" width="450" height="450" autoplay controls></video>
+  </div>
+
+
+             <div class="mandelgrid-item">
+      <div id="popup-form-16" class="popup-form-16 hidden">
+        <form id="my-form-16" action="https://formspree.io/f/mleknklr" method="POST">
+        <label>What did you see in the video?</label>
+        <input type="text" name="message"/>
+        <input type="hidden" name="video-id" value="mandelbulb16">
+        <button id="my-form-16-button">Submit</button>
+        <p id="my-form-16-status"></p>
+      </form>
+    </div>
+
+    <video id="my-video-16"  autoplay loop muted src="videos/mandelbulb16.mov" width="450" height="450" autoplay controls></video>
+  </div>
+
+
+       <div class="mandelgrid-item">
+      <div id="popup-form-17" class="popup-form-17 hidden">
+        <form id="my-form-17" action="https://formspree.io/f/mleknklr" method="POST">
+        <label>What did you see in the video?</label>
+        <input type="text" name="message"/>
+        <input type="hidden" name="video-id" value="mandelbulb17">
+        <button id="my-form-17-button">Submit</button>
+        <p id="my-form-17-status"></p>
+      </form>
+    </div>
+
+    <video id="my-video-17"  autoplay loop muted src="videos/mandelbulb17.mov" width="450" height="450" autoplay controls></video>
+  </div>    
+
+
+     <div class="mandelgrid-item">
+      <div id="popup-form-18" class="popup-form-18 hidden">
+        <form id="my-form-18" action="https://formspree.io/f/mleknklr" method="POST">
+        <label>What did you see in the video?</label>
+        <input type="text" name="message"/>
+        <input type="hidden" name="video-id" value="mandelbulb18">
+        <button id="my-form-18-button">Submit</button>
+        <p id="my-form-18-status"></p>
+      </form>
+    </div>
+
+    <video id="my-video-18"  autoplay loop muted src="videos/mandelbulb18.mov" width="450" height="450" autoplay controls></video>
+  </div>   
+
+
+     <div class="mandelgrid-item">
+      <div id="popup-form-19" class="popup-form-19 hidden">
+        <form id="my-form-19" action="https://formspree.io/f/mleknklr" method="POST">
+        <label>What did you see in the video?</label>
+        <input type="text" name="message"/>
+        <input type="hidden" name="video-id" value="mandelbulb19">
+        <button id="my-form-19-button">Submit</button>
+        <p id="my-form-19-status"></p>
+      </form>
+    </div>
+
+    <video id="my-video-19"  autoplay loop muted src="videos/mandelbulb19.mov" width="450" height="450" autoplay controls></video>
+  </div>
+
+      <div class="mandelgrid-item">
+      <div id="popup-form-20" class="popup-form-20 hidden">
+        <form id="my-form-20" action="https://formspree.io/f/mleknklr" method="POST">
+        <label>What did you see in the video?</label>
+        <input type="text" name="message"/>
+        <input type="hidden" name="video-id" value="mandelbulb20">
+        <button id="my-form-20-button">Submit</button>
+        <p id="my-form-20-status"></p>
+      </form>
+    </div>
+
+    <video id="my-video-20"  autoplay loop muted src="videos/mandelbulb20.mov" width="450" height="450" autoplay controls></video>
+  </div>    
+
+
+    <div class="mandelgrid-item">
+      <div id="popup-form-21" class="popup-form-21 hidden">
+        <form id="my-form-21" action="https://formspree.io/f/mleknklr" method="POST">
+        <label>What did you see in the video?</label>
+        <input type="text" name="message"/>
+        <input type="hidden" name="video-id" value="mandelbulb21">
+        <button id="my-form-21-button">Submit</button>
+        <p id="my-form-21-status"></p>
+      </form>
+    </div>
+
+    <video id="my-video-21"  autoplay loop muted src="videos/mandelbulb21.mov" width="450" height="450" autoplay controls></video>
+  </div>    
   </div>
 </div>
 
   <button onclick="topFunction()" id="myBtn" title="Go to top">↑</button>
+<script>
+    var form = document.getElementById("my-form");
+    
+    async function handleSubmit(event) {
+      event.preventDefault();
+      var status = document.getElementById("my-form-status");
+      var data = new FormData(event.target);
+      fetch(event.target.action, {
+        method: form.method,
+        body: data,
+        headers: {
+            'Accept': 'application/json'
+        }
+      }).then(response => {
+        if (response.ok) {
+          status.innerHTML = "Thanks for your submission!";
+          form.reset()
+        } else {
+          response.json().then(data => {
+            if (Object.hasOwn(data, 'errors')) {
+              status.innerHTML = data["errors"].map(error => error["message"]).join(", ")
+            } else {
+              status.innerHTML = "Oops! There was a problem submitting your form"
+            }
+          })
+        }
+      }).catch(error => {
+        status.innerHTML = "Oops! There was a problem submitting your form"
+      });
+    }
+    form.addEventListener("submit", handleSubmit)
+</script>
+<script>
+    var form = document.getElementById("my-form-2");
+    
+    async function handleSubmit(event) {
+      event.preventDefault();
+      var status = document.getElementById("my-form-2-status");
+      var data = new FormData(event.target);
+      fetch(event.target.action, {
+        method: form.method,
+        body: data,
+        headers: {
+            'Accept': 'application/json'
+        }
+      }).then(response => {
+        if (response.ok) {
+          status.innerHTML = "Thanks for your submission!";
+          form.reset()
+        } else {
+          response.json().then(data => {
+            if (Object.hasOwn(data, 'errors')) {
+              status.innerHTML = data["errors"].map(error => error["message"]).join(", ")
+            } else {
+              status.innerHTML = "Oops! There was a problem submitting your form"
+            }
+          })
+        }
+      }).catch(error => {
+        status.innerHTML = "Oops! There was a problem submitting your form"
+      });
+    }
+    form.addEventListener("submit", handleSubmit)
+</script>
 
-  <footer>
-  <a href="../mesh/mesh.html">NEXT PAGE</a>
-</footer>
 
+<script>
+    var form = document.getElementById("my-form-3");
+    
+    async function handleSubmit(event) {
+      event.preventDefault();
+      var status = document.getElementById("my-form-3-status");
+      var data = new FormData(event.target);
+      fetch(event.target.action, {
+        method: form.method,
+        body: data,
+        headers: {
+            'Accept': 'application/json'
+        }
+      }).then(response => {
+        if (response.ok) {
+          status.innerHTML = "Thanks for your submission!";
+          form.reset()
+        } else {
+          response.json().then(data => {
+            if (Object.hasOwn(data, 'errors')) {
+              status.innerHTML = data["errors"].map(error => error["message"]).join(", ")
+            } else {
+              status.innerHTML = "Oops! There was a problem submitting your form"
+            }
+          })
+        }
+      }).catch(error => {
+        status.innerHTML = "Oops! There was a problem submitting your form"
+      });
+    }
+    form.addEventListener("submit", handleSubmit)
+</script>
+
+
+<script>
+    var form = document.getElementById("my-form-4");
+    
+    async function handleSubmit(event) {
+      event.preventDefault();
+      var status = document.getElementById("my-form-4-status");
+      var data = new FormData(event.target);
+      fetch(event.target.action, {
+        method: form.method,
+        body: data,
+        headers: {
+            'Accept': 'application/json'
+        }
+      }).then(response => {
+        if (response.ok) {
+          status.innerHTML = "Thanks for your submission!";
+          form.reset()
+        } else {
+          response.json().then(data => {
+            if (Object.hasOwn(data, 'errors')) {
+              status.innerHTML = data["errors"].map(error => error["message"]).join(", ")
+            } else {
+              status.innerHTML = "Oops! There was a problem submitting your form"
+            }
+          })
+        }
+      }).catch(error => {
+        status.innerHTML = "Oops! There was a problem submitting your form"
+      });
+    }
+    form.addEventListener("submit", handleSubmit)
+</script>
+
+
+<script>
+    var form = document.getElementById("my-form-5");
+    
+    async function handleSubmit(event) {
+      event.preventDefault();
+      var status = document.getElementById("my-form-5-status");
+      var data = new FormData(event.target);
+      fetch(event.target.action, {
+        method: form.method,
+        body: data,
+        headers: {
+            'Accept': 'application/json'
+        }
+      }).then(response => {
+        if (response.ok) {
+          status.innerHTML = "Thanks for your submission!";
+          form.reset()
+        } else {
+          response.json().then(data => {
+            if (Object.hasOwn(data, 'errors')) {
+              status.innerHTML = data["errors"].map(error => error["message"]).join(", ")
+            } else {
+              status.innerHTML = "Oops! There was a problem submitting your form"
+            }
+          })
+        }
+      }).catch(error => {
+        status.innerHTML = "Oops! There was a problem submitting your form"
+      });
+    }
+    form.addEventListener("submit", handleSubmit)
+</script>
+
+
+<script>
+    var form = document.getElementById("my-form-6");
+    
+    async function handleSubmit(event) {
+      event.preventDefault();
+      var status = document.getElementById("my-form-6-status");
+      var data = new FormData(event.target);
+      fetch(event.target.action, {
+        method: form.method,
+        body: data,
+        headers: {
+            'Accept': 'application/json'
+        }
+      }).then(response => {
+        if (response.ok) {
+          status.innerHTML = "Thanks for your submission!";
+          form.reset()
+        } else {
+          response.json().then(data => {
+            if (Object.hasOwn(data, 'errors')) {
+              status.innerHTML = data["errors"].map(error => error["message"]).join(", ")
+            } else {
+              status.innerHTML = "Oops! There was a problem submitting your form"
+            }
+          })
+        }
+      }).catch(error => {
+        status.innerHTML = "Oops! There was a problem submitting your form"
+      });
+    }
+    form.addEventListener("submit", handleSubmit)
+</script>
+
+
+<script>
+    var form = document.getElementById("my-form-7");
+    
+    async function handleSubmit(event) {
+      event.preventDefault();
+      var status = document.getElementById("my-form-7-status");
+      var data = new FormData(event.target);
+      fetch(event.target.action, {
+        method: form.method,
+        body: data,
+        headers: {
+            'Accept': 'application/json'
+        }
+      }).then(response => {
+        if (response.ok) {
+          status.innerHTML = "Thanks for your submission!";
+          form.reset()
+        } else {
+          response.json().then(data => {
+            if (Object.hasOwn(data, 'errors')) {
+              status.innerHTML = data["errors"].map(error => error["message"]).join(", ")
+            } else {
+              status.innerHTML = "Oops! There was a problem submitting your form"
+            }
+          })
+        }
+      }).catch(error => {
+        status.innerHTML = "Oops! There was a problem submitting your form"
+      });
+    }
+    form.addEventListener("submit", handleSubmit)
+</script>
+
+
+<script>
+    var form = document.getElementById("my-form-8");
+    
+    async function handleSubmit(event) {
+      event.preventDefault();
+      var status = document.getElementById("my-form-8-status");
+      var data = new FormData(event.target);
+      fetch(event.target.action, {
+        method: form.method,
+        body: data,
+        headers: {
+            'Accept': 'application/json'
+        }
+      }).then(response => {
+        if (response.ok) {
+          status.innerHTML = "Thanks for your submission!";
+          form.reset()
+        } else {
+          response.json().then(data => {
+            if (Object.hasOwn(data, 'errors')) {
+              status.innerHTML = data["errors"].map(error => error["message"]).join(", ")
+            } else {
+              status.innerHTML = "Oops! There was a problem submitting your form"
+            }
+          })
+        }
+      }).catch(error => {
+        status.innerHTML = "Oops! There was a problem submitting your form"
+      });
+    }
+    form.addEventListener("submit", handleSubmit)
+</script>
+
+
+<script>
+    var form = document.getElementById("my-form-9");
+    
+    async function handleSubmit(event) {
+      event.preventDefault();
+      var status = document.getElementById("my-form-9-status");
+      var data = new FormData(event.target);
+      fetch(event.target.action, {
+        method: form.method,
+        body: data,
+        headers: {
+            'Accept': 'application/json'
+        }
+      }).then(response => {
+        if (response.ok) {
+          status.innerHTML = "Thanks for your submission!";
+          form.reset()
+        } else {
+          response.json().then(data => {
+            if (Object.hasOwn(data, 'errors')) {
+              status.innerHTML = data["errors"].map(error => error["message"]).join(", ")
+            } else {
+              status.innerHTML = "Oops! There was a problem submitting your form"
+            }
+          })
+        }
+      }).catch(error => {
+        status.innerHTML = "Oops! There was a problem submitting your form"
+      });
+    }
+    form.addEventListener("submit", handleSubmit)
+</script>
+
+
+<script>
+    var form = document.getElementById("my-form-10");
+    
+    async function handleSubmit(event) {
+      event.preventDefault();
+      var status = document.getElementById("my-form-10-status");
+      var data = new FormData(event.target);
+      fetch(event.target.action, {
+        method: form.method,
+        body: data,
+        headers: {
+            'Accept': 'application/json'
+        }
+      }).then(response => {
+        if (response.ok) {
+          status.innerHTML = "Thanks for your submission!";
+          form.reset()
+        } else {
+          response.json().then(data => {
+            if (Object.hasOwn(data, 'errors')) {
+              status.innerHTML = data["errors"].map(error => error["message"]).join(", ")
+            } else {
+              status.innerHTML = "Oops! There was a problem submitting your form"
+            }
+          })
+        }
+      }).catch(error => {
+        status.innerHTML = "Oops! There was a problem submitting your form"
+      });
+    }
+    form.addEventListener("submit", handleSubmit)
+</script>
+
+
+<script>
+    var form = document.getElementById("my-form-11");
+    
+    async function handleSubmit(event) {
+      event.preventDefault();
+      var status = document.getElementById("my-form-11-status");
+      var data = new FormData(event.target);
+      fetch(event.target.action, {
+        method: form.method,
+        body: data,
+        headers: {
+            'Accept': 'application/json'
+        }
+      }).then(response => {
+        if (response.ok) {
+          status.innerHTML = "Thanks for your submission!";
+          form.reset()
+        } else {
+          response.json().then(data => {
+            if (Object.hasOwn(data, 'errors')) {
+              status.innerHTML = data["errors"].map(error => error["message"]).join(", ")
+            } else {
+              status.innerHTML = "Oops! There was a problem submitting your form"
+            }
+          })
+        }
+      }).catch(error => {
+        status.innerHTML = "Oops! There was a problem submitting your form"
+      });
+    }
+    form.addEventListener("submit", handleSubmit)
+</script>
+
+
+<script>
+    var form = document.getElementById("my-form-12");
+    
+    async function handleSubmit(event) {
+      event.preventDefault();
+      var status = document.getElementById("my-form-12-status");
+      var data = new FormData(event.target);
+      fetch(event.target.action, {
+        method: form.method,
+        body: data,
+        headers: {
+            'Accept': 'application/json'
+        }
+      }).then(response => {
+        if (response.ok) {
+          status.innerHTML = "Thanks for your submission!";
+          form.reset()
+        } else {
+          response.json().then(data => {
+            if (Object.hasOwn(data, 'errors')) {
+              status.innerHTML = data["errors"].map(error => error["message"]).join(", ")
+            } else {
+              status.innerHTML = "Oops! There was a problem submitting your form"
+            }
+          })
+        }
+      }).catch(error => {
+        status.innerHTML = "Oops! There was a problem submitting your form"
+      });
+    }
+    form.addEventListener("submit", handleSubmit)
+</script>
+
+
+<script>
+    var form = document.getElementById("my-form-13");
+    
+    async function handleSubmit(event) {
+      event.preventDefault();
+      var status = document.getElementById("my-form-13-status");
+      var data = new FormData(event.target);
+      fetch(event.target.action, {
+        method: form.method,
+        body: data,
+        headers: {
+            'Accept': 'application/json'
+        }
+      }).then(response => {
+        if (response.ok) {
+          status.innerHTML = "Thanks for your submission!";
+          form.reset()
+        } else {
+          response.json().then(data => {
+            if (Object.hasOwn(data, 'errors')) {
+              status.innerHTML = data["errors"].map(error => error["message"]).join(", ")
+            } else {
+              status.innerHTML = "Oops! There was a problem submitting your form"
+            }
+          })
+        }
+      }).catch(error => {
+        status.innerHTML = "Oops! There was a problem submitting your form"
+      });
+    }
+    form.addEventListener("submit", handleSubmit)
+</script>
+
+<script>
+    var form = document.getElementById("my-form-14");
+    
+    async function handleSubmit(event) {
+      event.preventDefault();
+      var status = document.getElementById("my-form-14-status");
+      var data = new FormData(event.target);
+      fetch(event.target.action, {
+        method: form.method,
+        body: data,
+        headers: {
+            'Accept': 'application/json'
+        }
+      }).then(response => {
+        if (response.ok) {
+          status.innerHTML = "Thanks for your submission!";
+          form.reset()
+        } else {
+          response.json().then(data => {
+            if (Object.hasOwn(data, 'errors')) {
+              status.innerHTML = data["errors"].map(error => error["message"]).join(", ")
+            } else {
+              status.innerHTML = "Oops! There was a problem submitting your form"
+            }
+          })
+        }
+      }).catch(error => {
+        status.innerHTML = "Oops! There was a problem submitting your form"
+      });
+    }
+    form.addEventListener("submit", handleSubmit)
+</script>
+
+
+<script>
+    var form = document.getElementById("my-form-15");
+    
+    async function handleSubmit(event) {
+      event.preventDefault();
+      var status = document.getElementById("my-form-15-status");
+      var data = new FormData(event.target);
+      fetch(event.target.action, {
+        method: form.method,
+        body: data,
+        headers: {
+            'Accept': 'application/json'
+        }
+      }).then(response => {
+        if (response.ok) {
+          status.innerHTML = "Thanks for your submission!";
+          form.reset()
+        } else {
+          response.json().then(data => {
+            if (Object.hasOwn(data, 'errors')) {
+              status.innerHTML = data["errors"].map(error => error["message"]).join(", ")
+            } else {
+              status.innerHTML = "Oops! There was a problem submitting your form"
+            }
+          })
+        }
+      }).catch(error => {
+        status.innerHTML = "Oops! There was a problem submitting your form"
+      });
+    }
+    form.addEventListener("submit", handleSubmit)
+</script>
+
+
+<script>
+    var form = document.getElementById("my-form-16");
+    
+    async function handleSubmit(event) {
+      event.preventDefault();
+      var status = document.getElementById("my-form-16-status");
+      var data = new FormData(event.target);
+      fetch(event.target.action, {
+        method: form.method,
+        body: data,
+        headers: {
+            'Accept': 'application/json'
+        }
+      }).then(response => {
+        if (response.ok) {
+          status.innerHTML = "Thanks for your submission!";
+          form.reset()
+        } else {
+          response.json().then(data => {
+            if (Object.hasOwn(data, 'errors')) {
+              status.innerHTML = data["errors"].map(error => error["message"]).join(", ")
+            } else {
+              status.innerHTML = "Oops! There was a problem submitting your form"
+            }
+          })
+        }
+      }).catch(error => {
+        status.innerHTML = "Oops! There was a problem submitting your form"
+      });
+    }
+    form.addEventListener("submit", handleSubmit)
+</script>
+
+
+<script>
+    var form = document.getElementById("my-form-17");
+    
+    async function handleSubmit(event) {
+      event.preventDefault();
+      var status = document.getElementById("my-form-17-status");
+      var data = new FormData(event.target);
+      fetch(event.target.action, {
+        method: form.method,
+        body: data,
+        headers: {
+            'Accept': 'application/json'
+        }
+      }).then(response => {
+        if (response.ok) {
+          status.innerHTML = "Thanks for your submission!";
+          form.reset()
+        } else {
+          response.json().then(data => {
+            if (Object.hasOwn(data, 'errors')) {
+              status.innerHTML = data["errors"].map(error => error["message"]).join(", ")
+            } else {
+              status.innerHTML = "Oops! There was a problem submitting your form"
+            }
+          })
+        }
+      }).catch(error => {
+        status.innerHTML = "Oops! There was a problem submitting your form"
+      });
+    }
+    form.addEventListener("submit", handleSubmit)
+</script>
+
+<script>
+    var form = document.getElementById("my-form-18");
+    
+    async function handleSubmit(event) {
+      event.preventDefault();
+      var status = document.getElementById("my-form-18-status");
+      var data = new FormData(event.target);
+      fetch(event.target.action, {
+        method: form.method,
+        body: data,
+        headers: {
+            'Accept': 'application/json'
+        }
+      }).then(response => {
+        if (response.ok) {
+          status.innerHTML = "Thanks for your submission!";
+          form.reset()
+        } else {
+          response.json().then(data => {
+            if (Object.hasOwn(data, 'errors')) {
+              status.innerHTML = data["errors"].map(error => error["message"]).join(", ")
+            } else {
+              status.innerHTML = "Oops! There was a problem submitting your form"
+            }
+          })
+        }
+      }).catch(error => {
+        status.innerHTML = "Oops! There was a problem submitting your form"
+      });
+    }
+    form.addEventListener("submit", handleSubmit)
+</script>
+
+<script>
+    var form = document.getElementById("my-form-19");
+    
+    async function handleSubmit(event) {
+      event.preventDefault();
+      var status = document.getElementById("my-form-19-status");
+      var data = new FormData(event.target);
+      fetch(event.target.action, {
+        method: form.method,
+        body: data,
+        headers: {
+            'Accept': 'application/json'
+        }
+      }).then(response => {
+        if (response.ok) {
+          status.innerHTML = "Thanks for your submission!";
+          form.reset()
+        } else {
+          response.json().then(data => {
+            if (Object.hasOwn(data, 'errors')) {
+              status.innerHTML = data["errors"].map(error => error["message"]).join(", ")
+            } else {
+              status.innerHTML = "Oops! There was a problem submitting your form"
+            }
+          })
+        }
+      }).catch(error => {
+        status.innerHTML = "Oops! There was a problem submitting your form"
+      });
+    }
+    form.addEventListener("submit", handleSubmit)
+</script>
+
+<script>
+    var form = document.getElementById("my-form-20");
+    
+    async function handleSubmit(event) {
+      event.preventDefault();
+      var status = document.getElementById("my-form-20-status");
+      var data = new FormData(event.target);
+      fetch(event.target.action, {
+        method: form.method,
+        body: data,
+        headers: {
+            'Accept': 'application/json'
+        }
+      }).then(response => {
+        if (response.ok) {
+          status.innerHTML = "Thanks for your submission!";
+          form.reset()
+        } else {
+          response.json().then(data => {
+            if (Object.hasOwn(data, 'errors')) {
+              status.innerHTML = data["errors"].map(error => error["message"]).join(", ")
+            } else {
+              status.innerHTML = "Oops! There was a problem submitting your form"
+            }
+          })
+        }
+      }).catch(error => {
+        status.innerHTML = "Oops! There was a problem submitting your form"
+      });
+    }
+    form.addEventListener("submit", handleSubmit)
+</script>
+<script>
+    var form = document.getElementById("my-form-21");
+    
+    async function handleSubmit(event) {
+      event.preventDefault();
+      var status = document.getElementById("my-form-21-status");
+      var data = new FormData(event.target);
+      fetch(event.target.action, {
+        method: form.method,
+        body: data,
+        headers: {
+            'Accept': 'application/json'
+        }
+      }).then(response => {
+        if (response.ok) {
+          status.innerHTML = "Thanks for your submission!";
+          form.reset()
+        } else {
+          response.json().then(data => {
+            if (Object.hasOwn(data, 'errors')) {
+              status.innerHTML = data["errors"].map(error => error["message"]).join(", ")
+            } else {
+              status.innerHTML = "Oops! There was a problem submitting your form"
+            }
+          })
+        }
+      }).catch(error => {
+        status.innerHTML = "Oops! There was a problem submitting your form"
+      });
+    }
+    form.addEventListener("submit", handleSubmit)
+</script>
+
+ <script src="scripts.js"></script>
 
 </body>
 </html>

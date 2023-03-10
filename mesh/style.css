@@ -174,12 +174,13 @@ input[type="text" i] {
 }
 
 #my-form-2-button {
-  border:none;
+  border:display;
   border-radius:5px;
   height:20px;
   text-align:center;
   font-family: 'Inconsolata', monospace;
   background-color:white;
+  z-index:100;
 }
 
 

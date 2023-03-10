@@ -138,3 +138,56 @@ footer a {
   grid-column: 2 / span 2;
 }
 
+
+form {
+  position: absolute;
+  display:flex;
+  padding:20px;
+  flex-direction:column;
+  top: 30%;
+  left: 15%;
+  z-index: 1000;
+  background-color:#161616;
+  border-radius:5px;
+}
+
+.hidden {
+  display: none;
+}
+
+input[type="text" i] {
+  border:none;
+  height:30px;
+  margin-bottom:20px;
+  border-radius:5px;
+}
+
+
+#my-form-button {
+  border:none;
+  border-radius:5px;
+  height:20px;
+  text-align:center;
+  font-family: 'Inconsolata', monospace;
+  background-color:white;
+}
+
+#my-form-2-button {
+  border:display;
+  border-radius:5px;
+  height:20px;
+  text-align:center;
+  font-family: 'Inconsolata', monospace;
+  background-color:white;
+  z-index:100;
+}
+
+
+label {
+  padding-bottom:20px;
+}
+
+#my-form{
+  padding:20px;
+}
+
